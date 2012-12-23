@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rfq_date: 2012-11-22
+  sales_id: 1
+  customer_id: 1
+  safety_eng_id: 1
+  emc_eng_id: 1
+  product_id: 1
+  last_updated_by_id: 1
+  active: false
+  start_date: 2012-11-22
+  finish_date: 2012-11-22
+  need_report: false
+  report_language: MyString
+  top_secret: false
+  category_id: 1
+
+two:
+  rfq_date: 2012-11-22
+  sales_id: 1
+  customer_id: 1
+  safety_eng_id: 1
+  emc_eng_id: 1
+  product_id: 1
+  last_updated_by_id: 1
+  active: false
+  start_date: 2012-11-22
+  finish_date: 2012-11-22
+  need_report: false
+  report_language: MyString
+  top_secret: false
+  category_id: 1

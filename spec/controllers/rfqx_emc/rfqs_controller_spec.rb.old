@@ -1,0 +1,244 @@
+# encoding: utf-8
+require 'spec_helper'
+
+module RfqxEmc
+describe RfqxEmc::RfqsController do
+
+  before(:each) do
+    #the following recognizes that there is a before filter without execution of it.
+    controller.should_receive(:require_signin)
+     #controller.should_receive(:session_timeout)
+  end
+  
+  render_views
+  
+  describe "'index'" do
+    it "should be successful" do
+      u = FactoryGirl.create(:authentify_user)
+      cust = FactoryGirl.create(:customer)
+      rfq = FactoryGirl.create(:rfq, :sales_id => u.id, :emc_eng_id => u.id, :safety_eng_id => u.id, :customer_id => cust.id)      
+      get 'index'
+      response.should be_success
+    end
+    
+    it "should be successful for dept head" do
+      #session[:sales] = true
+      session[:sales_dept_head] = true
+      get 'index'
+      response.should be_success
+    end
+  end
+
+  describe "'new'" do
+    it "should be successful for sales member" do
+      session[:sales] = true
+      #session[:member] = true
+      get 'new'
+      response.should be_success
+    end
+    
+    it "should create a valid standards for the rfq" do
+      #session[:sales] = true
+      session[:sales_dept_head] = true
+      rfq = FactoryGirl.build(:rfq)
+      std = rfq.standards.build
+      get 'new'
+      std.active.should be_true
+      std.should_not == nil
+    end
+    
+    it "should create a valid test items for the rfq" do
+      #session[:sales] = true
+      session[:sales_dept_head] = true
+      rfq = FactoryGirl.build(:rfq)
+      item = rfq.test_items.build
+      get 'new'
+      item.active.should be_true    
+      item.should_not == nil
+    end
+        
+  end
+
+  describe "'create'" do
+    it "should be successful for corp head" do
+      session[:corp_head] = true
+      session[:user_id] = 1
+      s = FactoryGirl.create(:standard)
+      rfq = FactoryGirl.attributes_for(:rfq, :need_report => true, :report_language => 'Chinese')
+      rfq[:standard_ids] = [s.id] # attach standard_id's to mimic the POST'ed form data
+      get 'create', :rfq => rfq
+      response.should redirect_to URI.escape("/view_handler?index=0&msg=RFQ已保存!")
+      #response.should render_template('new')
+    end
+    
+    it "should increase the record counter by one for a successful create" do
+      session[:sales] = true
+      #session[:member] = true
+      session[:user_id] = 10
+      rfq = FactoryGirl.attributes_for(:rfq)
+      lambda do
+        get 'create', :rfq => rfq
+      end.should change(Rfq, :count).by(1)
+    end
+    
+    it "should increase count by one on rfq_standard table if one standard is successfully added to rfq" do
+      session[:sales] = true
+      #session[:member] = true
+      session[:user_id] = 1
+      s = FactoryGirl.create(:standard)
+      s1 = FactoryGirl.create(:standard, :name => 'nnnew name')
+      rfq = FactoryGirl.attributes_for(:rfq, :rfq_standards_attributes => {'0' => {:standard_id => s1.id}})
+      lambda do
+        get 'create', :rfq => rfq
+      end.should change(RfqStandard, :count).by(1)      
+    end
+  end
+
+  describe "'edit'" do
+    it "should be successful for those with right" do
+      user = FactoryGirl.create(:user)
+      user1  = FactoryGirl.create(:user, :email => 'newnew@email.com')
+      cust = FactoryGirl.create(:customer)
+      session[:user_id] = user.id
+      session[:sales] = true
+      rfq = FactoryGirl.create(:rfq, :sales_id => user.id, :customer_id => cust.id, :emc_eng_id => user1.id, :safety_eng_id => user1.id)
+      get 'edit', :id => rfq.id
+      response.should be_success
+    end
+    
+    it "should redirect for those without rights" do
+      rfq = FactoryGirl.create(:rfq)
+      get 'edit', :id => rfq.id
+      response.should redirect_to URI.escape("/view_handler?index=0&msg=无修改权限！")
+    end
+  end
+
+  describe "'update'" do
+    it "should be successful for record owner" do
+      rfq = FactoryGirl.create(:rfq)
+      session[:user_id] = rfq.sales_id
+      session[:sales] = true
+      get 'update', :id => rfq.id, :rfq => {:model => 'new model'}
+      response.should redirect_to URI.escape("/view_handler?index=0&msg=已保存！")
+    end
+
+    #it "should delete a standard" do
+      #don't know how to do it!
+      #s = FactoryGirl.create(:standard)
+      #s1 = FactoryGirl.create(:standard, :name => 'nnnew name')
+      #u = FactoryGirl.create(:user)
+      #c = FactoryGirl.create(:customer)
+      #session[:user_id] = u.id
+      #session[:sales] = true
+      #rs = FactoryGirl.build(:rfq_standard, :standard_id => s.id)
+      #rs1 =  FactoryGirl.build(:rfq_standard, :standard_id => s1.id)
+      #rfq = FactoryGirl.create(:rfq, :sales_id => u.id, :customer_id => c.id, :rfq_standards => [rs, rs1], :emc_eng_id => nil, :safety_eng_id => nil)
+      #lambda do
+      #  get 'update', :id => rfq.id, :rfq => {:rfq_standards_attributes => {'0' => {:standard_id => s.id, :_destroy => "1" }, '1' => {:standard_id => s1.id}}}
+      #end.should change(RfqStandard, :count).by(-1)
+    #end
+
+    it "should increase rfq_standard record count by one if a standard is added" do
+      s = FactoryGirl.create(:standard)
+      s1 = FactoryGirl.create(:standard, :name => 'nnnew name')
+      u = FactoryGirl.create(:user)
+      session[:user_id] = u.id
+      session[:sales] = true
+      rs = FactoryGirl.build(:rfq_standard, :standard_id => s.id)
+      rfq = FactoryGirl.create(:rfq, :sales_id => u.id, :rfq_standards => [rs])
+      lambda do
+        get 'update', :id => rfq.id, :rfq => {:rfq_standards_attributes => {'0' => {:standard_id => s1.id}}}
+      end.should change(RfqStandard, :count).by(1)   
+    end
+    
+    it "should increase rfq_test_item record count by one if a test item is added" do
+      i = FactoryGirl.create(:test_item)
+      i1 =  FactoryGirl.create(:test_item, :name => 'newnew test')
+      u = FactoryGirl.create(:user)
+      ul = FactoryGirl.create(:user_level, :user_id => u.id, :role => 'sales')
+      session[:user_id] = u.id
+      session[:sales] = true
+      rt = FactoryGirl.create(:rfq_test_item, :test_item_id => i.id)
+      rfq = FactoryGirl.create(:rfq, :sales_id => u.id, :rfq_test_items => [rt])
+      lambda do
+        get 'update', :id => rfq.id, :rfq => {:rfq_test_items_attributes => {'0' => {:test_item_id => i1.id}}}
+      end.should change(RfqTestItem, :count).by(1)   
+    end 
+    
+    it "should increase rfq_standard record count only by one if 2 new standards are added in update and old one removed" do
+      s = FactoryGirl.create(:standard)
+      s1 = FactoryGirl.create(:standard, :name => 'nnew std')
+      u = FactoryGirl.create(:user)
+      ul = FactoryGirl.create(:user_level, :user_id => u.id, :role => 'sales')
+      session[:user_id] = u.id
+      session[:sales] = true
+      r_std = FactoryGirl.create(:rfq_standard, :standard_id => s.id)
+      rfq = FactoryGirl.create(:rfq, :sales_id => u.id, :rfq_standards => [r_std])
+
+      lambda do
+        get 'update', :id => rfq.id, :rfq => {:rfq_standards_attributes => {'0' => {:standard_id => s1.id}}}
+      end.should change(RfqStandard, :count).by(1)   
+    end
+          
+    it "should increase rfq_test_item record count only by one if 2 new test items are added in update and old one removed" do
+      i = FactoryGirl.create(:test_item)
+      i1 = FactoryGirl.create(:test_item, :name => 'nnew std')
+      u = FactoryGirl.create(:user)
+      ul = FactoryGirl.create(:user_level, :user_id => u.id, :role => 'sales')
+      session[:user_id] = u.id
+      session[:sales] = true
+      rt = FactoryGirl.create(:rfq_test_item,  :test_item_id => i.id)
+      rfq = FactoryGirl.create(:rfq, :sales_id => u.id, :rfq_test_items => [rt])
+      lambda do
+        get 'update', :id => rfq.id, :rfq => {:rfq_test_items_attributes => {'0' => {:test_item_id => i1.id}}}
+      end.should change(RfqTestItem, :count).by(1)   
+    end
+               
+  end
+
+  describe "'show'" do
+    it "should be successful for sales" do
+      cust = FactoryGirl.create(:customer)
+      emc = FactoryGirl.create(:user)
+      safety = FactoryGirl.create(:user, :name => "saftey eng", :email => 'newemail@example.com')
+      m = FactoryGirl.create(:manufacturer)
+      u = FactoryGirl.create(:user, :email => 'newemail1@example.com')
+      session[:user_id] = u.id
+      session[:sales] = true
+      cate = FactoryGirl.create(:category)
+      rfq = FactoryGirl.create(:rfq, :customer_id => cust.id, :sales_id => u.id, :category_id => cate.id, 
+                    :manufacturer_id => m.id, :emc_eng_id => emc.id, :safety_eng_id => safety.id, :input_by_id => u.id)
+      get 'show', :id => rfq.id
+      response.should be_success
+    end
+    
+    it "should be successful for reporter" do
+      cust = FactoryGirl.create(:customer)
+      emc = FactoryGirl.create(:user)
+      safety = FactoryGirl.create(:user, :name => "saftey eng", :email => 'newemail@example.com')
+      m = FactoryGirl.create(:manufacturer)
+      u = FactoryGirl.create(:user, :email => 'newemail1@example.com')
+      session[:reporter] = true
+      cate = FactoryGirl.create(:category)
+      rfq = FactoryGirl.create(:rfq, :customer_id => cust.id, :sales_id => u.id, :category_id => cate.id, 
+                    :manufacturer_id => m.id, :emc_eng_id => emc.id, :safety_eng_id => safety.id, :input_by_id => u.id)
+      get 'show', :id => rfq.id
+      response.should be_success
+    end    
+    
+    it "should reject user without rights" do
+      cust = FactoryGirl.create(:customer)
+      emc = FactoryGirl.create(:user)
+      safety = FactoryGirl.create(:user, :name => "saftey eng", :email => 'newemail@example.com')
+      m = FactoryGirl.create(:manufacturer)
+      u = FactoryGirl.create(:user, :email => 'newemail1@example.com')
+      session[:user_id] = u.id + 1
+      cate = FactoryGirl.create(:category)
+      rfq = FactoryGirl.create(:rfq, :customer_id => cust.id, :sales_id => u.id, :category_id => cate.id, 
+                    :manufacturer_id => m.id, :emc_eng_id => emc.id, :safety_eng_id => safety.id)
+      get 'show', :id => rfq.id
+      response.should redirect_to URI.escape("/view_handler?index=0&msg=权限不足！")      
+    end
+  end
+end 
+end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rfq_id: 1
+  name: MyString
+  model: MyString
+  tech_spec: MyText
+  drawing_num: MyString
+
+two:
+  rfq_id: 1
+  name: MyString
+  model: MyString
+  tech_spec: MyText
+  drawing_num: MyString

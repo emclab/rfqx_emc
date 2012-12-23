@@ -1,0 +1,28 @@
+<div id="main_body">
+<h1>产品/厂家分类</h1>
+<table>
+  <tr>
+  	<th></th>
+    <th>分类</th>
+    <th>内容</th>
+    <% if has_edit_create_right? %>
+      <th>Active?</th>
+    <% end %>
+    <th></th>
+
+  </tr>
+
+<% @categories.each do |cate| %>
+  <tr>
+    <td><%= link_to "View", SUBURI + "/view_handler?index=1&url=#{category_path(cate)}" %></td>
+    <td><%= cate.name %></td>
+    <td><%= cate.description %></td>
+    <td><%= cate.active if has_edit_create_right? %></td>
+    <td><%= link_to 'Edit', SUBURI + "/view_handler?index=1&url=#{edit_category_path(cate)}" if has_edit_create_right? %></td>
+  </tr>
+<% end %>
+</table>
+
+  <%= link_to 'New Category', SUBURI + "/view_handler?url=#{new_category_path}&index=1" if has_edit_create_right? %>
+  <%= link_to 'Back', SUBURI + "/view_handler?index=0" %>
+</div>
