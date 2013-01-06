@@ -8,8 +8,14 @@ gemspec
 # jquery-rails is used by the dummy application
 gem "jquery-rails"
 
-gem 'productx_emc_it' , :path => '../productx_emc_it'
-gem 'authentify', :path => '../authentify'  #for rspec test
+#gem 'customerx' , :path => '../customerx'
+#gem 'productx_emc_it' , :path => '../productx_emc_it'
+#gem 'authentify', :path => '../authentify'  #for rspec test
+
+gem 'customerx' , :git => 'http://github.com/emclab/customerx.git'
+gem 'productx_emc_it' , :git => 'http://github.com/emclab/productx_emc_it.git'
+gem 'authentify', :git => 'http://github.com/emclab/authentify.git'
+
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or

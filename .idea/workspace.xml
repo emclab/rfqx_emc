@@ -19,82 +19,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="id.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb">
+      <file leaf-file-name="rfq.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/factories/rfq.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0">
+            <state line="4" column="29" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_case.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/test_case.rb">
+      <file leaf-file-name="20121122141514_create_rfqx_emc_rfqs.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20121122141514_create_rfqx_emc_rfqs.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="395" column="0" selection-start="14541" selection-end="14541" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categories_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/rfqx_emc/categories_controller.rb">
+      <file leaf-file-name="categories_helper_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/helpers/rfqx_emc/categories_helper_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="0" selection-start="2319" selection-end="2319" vertical-scroll-proportion="0.0">
+            <state line="14" column="4" selection-start="378" selection-end="378" vertical-scroll-proportion="0.5603448">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-2.12.0/lib/rspec/core/example.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="0" selection-start="3964" selection-end="3964" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sessions_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../authentify/app/helpers/authentify/sessions_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example_group.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-2.12.0/lib/rspec/core/example_group.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="370" column="0" selection-start="13508" selection-end="13508" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="categories_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="categories_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="0" selection-start="4737" selection-end="4737" vertical-scroll-proportion="0.10526316">
+            <state line="14" column="6" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="implicit_render.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb">
+      <file leaf-file-name="sys_user_groups.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/factories/sys_user_groups.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+            <state line="8" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/attribute_methods/read.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="3056" selection-end="3056" vertical-scroll-proportion="0.0">
+            <state line="16" column="1" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +76,30 @@
       <file leaf-file-name="user_privilege_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../authentify/app/custom/authentify/user_privilege_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="0" selection-start="4666" selection-end="4666" vertical-scroll-proportion="-4.2">
+            <state line="40" column="0" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-4.8">
+              <folding>
+                <marker date="1357445156704" expanded="true" signature="17:6772" placeholder=" ... end" />
+                <marker date="1357445156704" expanded="true" signature="46:6766" placeholder=" ... end" />
+                <marker date="1357445156704" expanded="true" signature="72:6760" placeholder=" ... end" />
+                <marker date="1357445156704" expanded="true" signature="991:1184" placeholder=" ... end" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rfq_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/models/rfqx_emc/rfq_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="5" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rfq.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/rfqx_emc/rfq.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,10 +116,13 @@
     <option name="changedFiles">
       <list>
         <option value="C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/test_case.rb" />
-        <option value="$PROJECT_DIR$/../authentify/app/custom/authentify/user_privilege_helper.rb" />
         <option value="$PROJECT_DIR$/app/models/rfqx_emc/category.rb" />
         <option value="$PROJECT_DIR$/app/controllers/rfqx_emc/categories_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/factories/rfq.rb" />
+        <option value="$PROJECT_DIR$/../authentify/app/custom/authentify/user_privilege_helper.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/factories/sys_user_groups.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -209,104 +208,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dummy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rfqx_emc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -317,44 +218,11 @@
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../authentify" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../customerx" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="RSpec.RfqxEmc::CategoriesController">
-    <configuration default="false" name="RfqxEmc::CategoriesController Post 'create' failure" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="rfqx_emc" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="RfqxEmc::CategoriesController Post 'create' failure" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyCover" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyCover" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.All specs in: spec">
     <configuration default="false" name="RfqxEmc::CategoriesController" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="rfqx_emc" />
@@ -464,6 +332,35 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="RfqxEmc::CategoriesController 'update'" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All specs in: spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="rfqx_emc" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
@@ -685,19 +582,19 @@
       <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: rfqx_emc" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: rfqx_emc" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController Post 'create' failure" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController" />
-      <item index="6" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update' should be successful with rights" />
-      <item index="7" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update' should be rejected without rights" />
-      <item index="8" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update'" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update' should be successful with rights" />
+      <item index="6" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update' should be rejected without rights" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update'" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.All specs in: spec" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update' should be successful with rights" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update'" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update' should be rejected without rights" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController Post 'create' failure" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in: spec" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update' should be successful with rights" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update'" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.RfqxEmc::CategoriesController 'update' should be rejected without rights" />
       </list>
     </recent_temporary>
   </component>
@@ -756,11 +653,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15030675" sideWeight="0.6729452" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3167178" sideWeight="0.6729452" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31678084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5007669" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270548" sideWeight="0.49386504" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3270548" sideWeight="0.49386504" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -825,15 +722,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
+          <line>52</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
+          <line>44</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
           <line>51</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>43</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>50</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/test_case.rb</url>
@@ -857,15 +754,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>64</line>
+          <line>65</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>57</line>
+          <line>58</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>90</line>
+          <line>91</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/rfqx_emc/categories_controller.rb</url>
@@ -877,19 +774,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>117</line>
+          <line>118</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>115</line>
+          <line>116</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>132</line>
+          <line>133</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>130</line>
+          <line>131</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/../authentify/app/custom/authentify/user_privilege_helper.rb</url>
@@ -905,101 +802,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb</url>
-          <line>112</line>
+          <line>113</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/../authentify/app/custom/authentify/user_privilege_helper.rb</url>
+          <line>40</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/testing/test_process.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/associations/collection_proxy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="3437" selection-end="3437" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rescue.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/rfqx_emc/category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-2.12.0/lib/rspec/core/example_group.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="370" column="0" selection-start="13508" selection-end="13508" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-2.12.0/lib/rspec/core/example.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="3964" selection-end="3964" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/attribute_methods/read.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="3056" selection-end="3056" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/test_case.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="395" column="0" selection-start="14541" selection-end="14541" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="395" column="0" selection-start="14541" selection-end="14541" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../authentify/app/helpers/authentify/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://C:/apps/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="59" column="0" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/rfqx_emc/categories_controller.rb">
@@ -1009,16 +834,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="130" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="356" selection-end="415" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rfqx_emc.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="34" selection-start="644" selection-end="674" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/rfqx_emc/rfq.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/rfq.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="29" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20121122141514_create_rfqx_emc_rfqs.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/rfqx_emc/rfq_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="5" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../authentify/app/custom/authentify/user_privilege_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="0" selection-start="4666" selection-end="4666" vertical-scroll-proportion="-4.2">
-          <folding />
+        <state line="40" column="0" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-4.8">
+          <folding>
+            <marker date="1357445156704" expanded="true" signature="17:6772" placeholder=" ... end" />
+            <marker date="1357445156704" expanded="true" signature="46:6766" placeholder=" ... end" />
+            <marker date="1357445156704" expanded="true" signature="72:6760" placeholder=" ... end" />
+            <marker date="1357445156704" expanded="true" signature="991:1184" placeholder=" ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/rfqx_emc/categories_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="4737" selection-end="4737" vertical-scroll-proportion="0.10526316">
+        <state line="14" column="6" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/sys_user_groups.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="1" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/helpers/rfqx_emc/categories_helper_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="378" selection-end="378" vertical-scroll-proportion="0.5603448">
           <folding />
         </state>
       </provider>

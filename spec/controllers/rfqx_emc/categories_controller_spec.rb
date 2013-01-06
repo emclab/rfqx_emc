@@ -13,13 +13,14 @@ module RfqxEmc
 
     describe "GET 'index'" do
       it "should be successful" do
-        ul = FactoryGirl.create(:authentify_user_level)
+        ugrp = FactoryGirl.create(:authentify_sys_user_group, :user_group_name => 'eng')
+        action = FactoryGirl.create(:authentify_sys_action_on_table, :action => 'all_index_view', :table_name => 'test_itemx_test_plans')
+        right = FactoryGirl.create(:authentify_sys_user_right, :sys_user_group_id => ugrp.id, :sys_action_on_table_id => action.id)
+        ul = FactoryGirl.create(:authentify_user_level, :sys_user_group_id => ugrp.id )
         u = FactoryGirl.create(:authentify_user, :user_levels => [ul])
-        cat = FactoryGirl.create(:category, :last_updated_by_id => u.id)
         session[:user_id] = u.id
         session[:user_privilege] = Authentify::UserPrivilegeHelper::UserPrivilege.new(u.id)
-        #pp session[:user_privilege]
-        #pp session[:user_privilege].has_action_right?('index', 'categories')
+        cat = FactoryGirl.create(:category, :last_updated_by_id => u.id)
         get 'index', {:use_route => :rfqx_emc}
         response.should be_success
       end

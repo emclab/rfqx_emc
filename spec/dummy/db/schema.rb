@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121129022332) do
+ActiveRecord::Schema.define(:version => 20130106041736) do
 
   create_table "authentify_sessions", :force => true do |t|
     t.string   "session_id", :null => false
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(:version => 20121129022332) do
     t.string   "user_type_desp"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.string   "zone"
   end
 
   create_table "authentify_sys_user_rights", :force => true do |t|
@@ -101,14 +102,45 @@ ActiveRecord::Schema.define(:version => 20121129022332) do
     t.datetime "updated_at",                                   :null => false
   end
 
+  create_table "customerx_customers", :force => true do |t|
+    t.string   "name"
+    t.string   "short_name"
+    t.string   "contact"
+    t.string   "address"
+    t.string   "country"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "email"
+    t.string   "cell"
+    t.integer  "sales_id"
+    t.string   "web"
+    t.integer  "category1_id"
+    t.integer  "category2_id"
+    t.boolean  "active",             :default => true
+    t.string   "biz_status"
+    t.integer  "last_updated_by_id"
+    t.string   "quality_system"
+    t.string   "employee_num"
+    t.string   "revenue"
+    t.text     "note"
+    t.integer  "user_id"
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+    t.text     "custom_attributes"
+  end
+
   create_table "productx_emc_it_products", :force => true do |t|
-    t.integer  "rfq_id"
     t.string   "name"
     t.string   "model"
-    t.text     "tech_spec"
     t.string   "drawing_num"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.text     "tech_spec"
+    t.string   "work_voltage"
+    t.string   "work_current"
+    t.string   "frequency"
+    t.string   "internal_frequency"
+    t.integer  "rfq_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "rfqx_emc_categories", :force => true do |t|
@@ -132,6 +164,7 @@ ActiveRecord::Schema.define(:version => 20121129022332) do
 
   create_table "rfqx_emc_rfqs", :force => true do |t|
     t.date     "rfq_date"
+    t.integer  "product_id"
     t.integer  "sales_id"
     t.integer  "customer_id"
     t.integer  "safety_eng_id"
@@ -146,6 +179,7 @@ ActiveRecord::Schema.define(:version => 20121129022332) do
     t.integer  "category_id"
     t.string   "cust_contact_name"
     t.string   "cust_contact_phone"
+    t.integer  "manufacturer_id"
     t.text     "note"
     t.datetime "created_at",                            :null => false
     t.datetime "updated_at",                            :null => false

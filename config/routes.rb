@@ -1,7 +1,7 @@
 RfqxEmc::Engine.routes.draw do
 
-  mount ProductxEmcIt::Engine => "/productx_emc_it"  #, :as => "authentify_engine"
   mount Authentify::Engine => "/authentify"  #, :as => "authentify_engine"
+  #mount ProductxEmcIt::Engine => "/productx_emc_it"
   
   resources :rfqs
   resources :categories

@@ -1,20 +1,6 @@
-PATH
-  remote: .
-  specs:
-    rfqx_emc (0.0.1)
-      coffee-rails (~> 3.2.1)
-      database_cleaner
-      execjs
-      gon
-      jquery-rails
-      rails (= 3.2.8)
-      sass-rails (~> 3.2.3)
-      simple_form
-      uglifier
-      will_paginate
-
-PATH
-  remote: ../authentify
+GIT
+  remote: http://github.com/emclab/authentify.git
+  revision: 487628a879e63cbdee84432271d6ac9762252778
   specs:
     authentify (0.0.1)
       bcrypt-ruby
@@ -37,13 +23,37 @@ PATH
       will_paginate (~> 3.0)
       yajl-ruby
 
-PATH
-  remote: ../productx_emc_it
+GIT
+  remote: http://github.com/emclab/customerx.git
+  revision: 9de0844e99ee3e2b8c0a2804e1e0f1fb1a5f3a6d
+  specs:
+    customerx (0.0.1)
+      rails (~> 3.2.8)
+
+GIT
+  remote: http://github.com/emclab/productx_emc_it.git
+  revision: 563311a89182c26b9ef63db1380773aa5f0470c1
   specs:
     productx_emc_it (0.0.1)
       coffee-rails (~> 3.2.1)
       database_cleaner
       execjs
+      gon
+      jquery-rails
+      rails (= 3.2.8)
+      sass-rails (~> 3.2.3)
+      simple_form
+      uglifier
+      will_paginate
+
+PATH
+  remote: .
+  specs:
+    rfqx_emc (0.0.1)
+      coffee-rails (~> 3.2.1)
+      database_cleaner
+      execjs
+      gon
       jquery-rails
       rails (= 3.2.8)
       sass-rails (~> 3.2.3)
@@ -104,7 +114,7 @@ GEM
     factory_girl_rails (4.1.0)
       factory_girl (~> 4.1.0)
       railties (>= 3.0.0)
-    gon (4.0.1)
+    gon (4.0.2)
       actionpack (>= 2.3.0)
       json
     haml (3.1.7)
@@ -116,22 +126,23 @@ GEM
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
-    jquery-rails (2.1.3)
-      railties (>= 3.1.0, < 5.0)
-      thor (~> 0.14)
+    jquery-rails (2.1.4)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
     json (1.7.5)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
-    multi_json (1.3.7)
-    nokogiri (1.5.5-x86-mingw32)
+    multi_json (1.5.0)
+    nokogiri (1.5.6)
+    nokogiri (1.5.6-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-protection (1.2.0)
+    rack-protection (1.3.2)
       rack
     rack-ssl (1.3.2)
       rack
@@ -152,13 +163,13 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    rake (10.0.2)
+    rake (10.0.3)
     rdoc (3.12)
       json (~> 1.4)
-    rspec-core (2.12.0)
-    rspec-expectations (2.12.0)
+    rspec-core (2.12.2)
+    rspec-expectations (2.12.1)
       diff-lcs (~> 1.1.3)
-    rspec-mocks (2.12.0)
+    rspec-mocks (2.12.1)
     rspec-rails (2.12.0)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
@@ -166,7 +177,7 @@ GEM
       rspec-core (~> 2.12.0)
       rspec-expectations (~> 2.12.0)
       rspec-mocks (~> 2.12.0)
-    sass (3.2.3)
+    sass (3.2.4)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -182,6 +193,7 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sqlite3 (1.3.6)
     sqlite3 (1.3.6-x86-mingw32)
     state_machine (1.1.2)
     thin (1.3.1)
@@ -209,6 +221,7 @@ PLATFORMS
 
 DEPENDENCIES
   authentify!
+  customerx!
   factory_girl_rails
   jquery-rails
   productx_emc_it!

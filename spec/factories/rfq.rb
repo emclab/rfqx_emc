@@ -2,6 +2,7 @@
 FactoryGirl.define do
   factory :rfq, class: 'RfqxEmc::Rfq' do 
     rfq_date                Date.current
+    product_id              1
     sales_id                1
     customer_id             2
     category_id             3
